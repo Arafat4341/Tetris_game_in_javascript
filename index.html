@@ -2,23 +2,24 @@
 <html>
 <head>
 	<title>Tetris</title>
-	<style type="text/css">
-		body{
-			background: #202028;
-			color: #fff;
-			text-align: center;
-			font-family: sans-serif;
-			font-size: 2em;
-		}
-		canvas{
-			border: solid .2em #fff;
-			height: 85vh;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div id="score"></div>
-	<canvas id="tetris" width="240" height="400"></canvas>
-	<script type="text/javascript" src="tetris.js"></script>
+	<div class="main col-md-12">
+		<div class="col-md-4">
+			<button id="bt" class="btn btn-success">Instruction</button>
+			<div class="panel panel-default pp">
+				<div id="ins" class="panel-body">
+				    Tetris classic
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div id="score"></div>
+			<canvas id="tetris" width="240" height="400"></canvas>
+			<script type="text/javascript" src="tetris.js"></script>
+		</div>
+	</div>
 </body>
 </html>
