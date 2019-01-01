@@ -1,13 +1,5 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
-var ourButton = document.getElementById('bt');
-var ourPanel = document.getElementById('ins');
-
-ourButton.addEventListener('click', instructions);
-
-function instructions(){
-	ourPanel.innerHTML = '<div class="panel panel-default pp"><p>Use arrow keys to move<p>And key q and w to rotate the pieces</div>';
-}
 
 context.scale(20, 20);
 
